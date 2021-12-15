@@ -13,6 +13,10 @@ namespace ManipulandoArquivos
 
 
 
+            
+
+
+
 
             
             Console.ReadLine();
@@ -20,7 +24,17 @@ namespace ManipulandoArquivos
         }
 
 
+        static void CriandoArquivoComWriter()
+        {
+            var caminhoDoArquivo = "arquivo.csv";
 
+            using(var fluxoDoArquivo = new FileStream(caminhoDoArquivo, FileMode.Create))
+            using (var escritor = new StreamWriter(fluxoDoArquivo))
+            {
+                escritor.Write("456,654564,456.0,Kelvin");
+            }
+
+        }
 
 
         static void UtilizandoStreamReader()
