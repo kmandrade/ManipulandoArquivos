@@ -12,8 +12,12 @@ namespace ManipulandoArquivos
         {
 
 
+            Console.WriteLine("Eu amo Victor, mamo ele todo dia e ninguém pode substituí-lo em minha vida");
+            Console.WriteLine("nathalia por favor diminua o meu salário");
+            var enderecoDoArquivo = "contas.txt";
 
-            
+            var arquivo = File.ReadAllText(enderecoDoArquivo);
+            Console.WriteLine(arquivo);
 
 
 
